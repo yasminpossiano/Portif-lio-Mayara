@@ -1,0 +1,356 @@
+/* Estilos gerais para a página */
+body {
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #879be3;
+    padding: 5px 0;
+    text-align: center;
+}
+.social-icon img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+    
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    filter: brightness(0.85);
+    box-shadow: 0px 10px 20px rgba(150, 174, 222, 0.94);
+    transition: transform 0.2s ease, filter 0.2s ease; /* Animação para efeito suave */
+}
+
+.icon img {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.icon img:hover {
+    filter: brightness(1); /* Clareia a imagem ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho da imagem */
+}
+
+.icon img:active {
+    filter: brightness(1.1); /* Clareia mais ao clicar */
+    transform: scale(1.1); /* Destaca ainda mais ao clicar */
+}
+
+
+.social-links{
+    margin-left: 10px;
+    
+}
+/* Container para a imagem, título e subtítulo */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    width: 200px;
+    height: 50px;
+}
+
+.container_header {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para a imagem no cabeçalho */
+.foto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0a015b;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Suaviza o efeito de aumento */
+}
+
+.foto img:hover {
+    transform: scale(1.1); /* Aumenta a imagem 10% ao passar o mouse */
+}
+
+/* Estilos para o título */
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Estilos para o subtítulo */
+.subtitulo {
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 300;
+    margin-left: 200px;
+}
+
+/* Seção "Sobre Mim" */
+.sobre-mim {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Adiciona o retângulo azul ao título "Sobre Mim" */
+.titulo-retangulo-azul {
+    background-color: #958fec; /* Azul */
+    color: white;              /* Cor do texto */
+    padding: 10px 10px;        /* Padding superior/inferior e lateral */
+    border-radius: 5px;        /* Cantos arredondados */
+    width: 96%;               /* O retângulo ocupará toda a largura do container */
+    font-size: 28px;           /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;         /* Deixa o título em negrito */
+    margin-bottom: 20px;       /* Espaço abaixo do título */
+    box-sizing: border-box;    /* Inclui o padding e a borda no cálculo da largura */
+}
+
+/* Seção "Meus Certificados" */
+.certificados {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.certificados h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    background-color: #879be3;
+}
+
+/* Container dos certificados */
+.certificados-container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Usando Flexbox */
+    flex-wrap: wrap; /* Permite que os itens que não cabem na linha sejam movidos para a linha seguinte */
+    /* Efeito ao passar o mouse sobre a imagem */
+    gap: 60px;
+    filter: brightness(0.85); /* Escurece levemente a imagem */
+    box-shadow: 0px 10px 20px rgba(150, 174, 222, 0.94); /* Adiciona uma sombra */
+}
+
+/* Estilos para cada certificado */
+.certificado {
+    width: 15%; /* Cada certificado ocupará 18% da largura do container */
+    text-align: center; /* Centraliza o texto e a imagem dentro de cada certificado */
+}
+
+.certificado img {
+    width: 100%; /* A imagem ocupa toda a largura disponível */
+    height: auto; /* A altura da imagem se ajusta automaticamente */
+    border-radius: 10px; /* Bordas arredondadas para as imagens */
+    transition: transform 0.3s ease; /* Suaviza o efeito de aumento */
+}
+
+.certificado img:hover {
+    transform: scale(1.1); /* Aumenta a imagem 10% ao passar o mouse */
+}
+
+.certificado p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Centralizar os títulos principais */
+.titulo-principal {
+    text-align: center;          /* Centraliza o texto horizontalmente */
+    font-size: 32px;             /* Ajuste o tamanho conforme necessário */
+    font-weight: bold;           /* Deixa o título mais destacado */
+    background-color: #879be3;
+}
+
+.titulo-secundario {
+    text-align: center;          /* Centraliza o texto horizontalmente */
+    font-size: 28px;             /* Ajuste o tamanho conforme necessário */
+    font-weight: bold;           /* Deixa o título em negrito */
+    margin-top: 40px;            /* Espaçamento superior */
+    margin-bottom: 20px;         /* Espaçamento inferior */
+}
+
+/* Seção de Certificados e Cursos - Centralizar os textos dos títulos */
+.certificados h2, .cursos-extracurriculares h2, .projetos h2 {
+    text-align: center;
+    font-size: 28px; /* Pode ajustar o tamanho do título conforme necessário */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Centralizar o subtítulo (pequeno texto) abaixo do título principal */
+.subtitulo {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Layout de cursos e projetos */
+.cursos-container, .projetos-container {
+    justify-content: center;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada curso e projeto */
+.curso, .projeto {
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: #a9b5e4;
+    border-radius: 9px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    flex-direction: column; /* Faz com que o conteúdo (imagem + texto) fiquem em coluna */
+}
+
+/* Estilos para a imagem dos cursos e projetos */
+.curso-img, .projeto-img {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura do container */
+    height: 200px; /* Ajusta a altura da imagem para que ela ocupe o quadrado */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+    transition: transform 0.3s ease; /* Suaviza o efeito de aumento */
+}
+
+.curso-img:hover, .projeto-img:hover {
+    transform: scale(1.1); /* Aumenta a imagem 10% ao passar o mouse */
+}
+
+/* Estilos para o texto de cursos e projetos */
+.curso-texto, .projeto-texto {
+    flex-grow: 1; /* Faz com que o texto ocupe o restante do espaço disponível */
+    padding-top: 15px; /* Espaço entre a imagem e o texto */
+}
+
+/* Títulos dos cursos e projetos */
+.curso h3, .projeto h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    background-color: #879be3;
+    padding: 5px;
+    border-radius: 5px; /* Bordas arredondadas para o título */
+}
+
+/* Estilos para a seção de Experiência Profissional */
+.experiencia {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+/* Estilos para a seção de Experiência Profissional */
+.experiencia {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+/* Estilos para o título da seção de Experiência Profissional */
+.titulo-secundario {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.titulo-retangulo-azul {
+    background-color: #879be3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Container para a experiência profissional e qualificações */
+.experiencia-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Estilo para o bloco de experiência profissional */
+.experiencia-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 280px; /* Define o tamanho mínimo para cada item */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título da experiência */
+.titulo-experiencia {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    background-color: #879be3;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Lista de atividades da experiência profissional */
+.experiencia-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilo para o bloco de qualificações */
+.qualificacoes-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título de qualificações */
+.titulo-qualificacoes {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    background-color: #958fec;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Lista de qualificações */
+.qualificacoes-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #555;
+}
